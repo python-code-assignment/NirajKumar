@@ -1,12 +1,16 @@
 import re
 
-password = "NirajKumar@"
+password = "NirajKumar@#sdfsfsd"
 flag = 0
 
 while True:
-    if (len(password) < 8):
+    if (len(password) < 6):
         flag = -1
         print("Password must be minimum 8 characters")
+        break
+    elif (len(password) > 12):
+        flag = -1
+        print("Password must not greater than 12 characters")
         break
     elif not re.search("[a-z]", password):
         flag = -1
