@@ -110,7 +110,12 @@ def recursive_func(mydict):
                 mydict.pop(key)
             else:
                 print("{} - {}".format(key, value))
+    
+    return mydict
                 
 
 if __name__ == "__main__":
-    recursive_func(people)
+    new_dict = recursive_func(people)
+    print("")
+    print("")
+    print(new_dict)
